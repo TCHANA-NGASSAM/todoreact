@@ -17,7 +17,8 @@ export function Persone() {
   };
   return (
     <div className="container">
-      <div className="tasks">
+      <h1>ADRIANO mini-todo</h1>
+      <div className="tasks"> 
         <input
           type="text"
           placeholder="Ajouter un element a la liste"

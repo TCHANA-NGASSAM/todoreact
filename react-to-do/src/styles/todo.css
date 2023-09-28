@@ -28,6 +28,12 @@ body {
     border: none;
     color: white;
     cursor: pointer;
+    
+}
+
+.btn:hover{
+    background-color: #1fae26;
+    transition: 1s;
 }
 .list{
    list-style: none;
@@ -37,6 +43,10 @@ body {
     border-bottom: 1px solid rgba(101, 98, 98, 0.347);
     padding-top: 15px;
   
+}
+h1{
+    text-align: center;
+
 }
 @media screen and (max-width:767px){
     .container{
