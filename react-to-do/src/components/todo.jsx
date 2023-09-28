@@ -11,13 +11,16 @@ export function Persone() {
     if(name !== ''){
       setTasks(tasks.concat(name));
     setName("");
+    }else{
+      alert("veuillez remplir le champ")
     }
+    
     
     
   };
   return (
     <div className="container">
-      <h1>ADRIANO mini-todo</h1>
+      <h1>TODO</h1>
       <div className="tasks"> 
         <input
           type="text"
@@ -25,7 +28,7 @@ export function Persone() {
           value={name}
           onChange={handelChangeNom}
           className="tasksinput"
-        />
+         required/>
       </div>
       <div className="tasksContain">
         <button onClick={handleClick} className="btn">Ajouter</button>
