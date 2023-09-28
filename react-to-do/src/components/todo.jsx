@@ -8,8 +8,12 @@ export function Persone() {
     setName(e.target.value);
   };
   const handleClick = () => {
-    setTasks(tasks.concat(name));
+    if(name !== ''){
+      setTasks(tasks.concat(name));
     setName("");
+    }
+    
+    
   };
   return (
     <div className="container">
